@@ -8,7 +8,7 @@
   </producto>
   <producto id="2">
     <!-- ERROR: el carácter & no está escapado (debería ser &amp;) -->
-    <nombre>Café & Postres Combo</nombre>
+    <nombre>Café &amp; Postres Combo</nombre>
     <categoria>Combos</categoria>
     <precio>60</precio>
     <stock>3</stock>
@@ -16,7 +16,7 @@
   <producto id="3">
     <nombre>Latte de vainilla</nombre>
     <!-- ERROR: la etiqueta <categoria> no se cierra -->
-    <categoria>Bebidas
+    <categoria>Bebidas</categoria>
     <precio>48</precio>
     <stock>2</stock>
   </producto>
@@ -26,10 +26,10 @@
     <!-- Esto NO es un error de formato: el XML sigue siendo válido con la
          etiqueta vacía. Es un dato incompleto que afecta la aplicación
          (¿cuánto cuesta un producto con precio vacío?). -->
-    <precio></precio>
+    <precio>45</precio>
     <stock>4</stock>
   </producto>
-</inventario>
+
 <!-- ERROR: este producto quedó FUERA del nodo raíz <inventario> -->
 <producto id="5">
   <nombre>Cold brew</nombre>
@@ -37,3 +37,4 @@
   <precio>52</precio>
   <stock>8</stock>
 </producto>
+</inventario>
